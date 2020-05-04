@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $font-main;
+  font-size: $font-size;
+  line-height: 1.5em;
+}
+
+body {
+  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  background-image: url("../img/global-bg.jpg");
+  background-color: #d8b036;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 1;
+  transition: opacity 1s ease 0s;
+
+  @include lg-min {
+    padding: 0 30px;
+  }
+  @include lg {
+    padding: 0 15px;
+  }
+}
+
+.wrapper {
+  display: flex;
+
+  @include lg {
+    flex-wrap: wrap;
+  }
+}
+
+.img-content {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  color: $color-gray;
+}
+
+a {
+  text-decoration: none;
+  color: $color-light;
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+}

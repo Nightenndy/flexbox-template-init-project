@@ -1,0 +1,7 @@
+.header {
+  overflow: hidden;
+  margin-bottom: 30px;
+  min-height: 100px;
+  border-radius: 0 0 7px 7px;
+  @include bg-color;
+}
